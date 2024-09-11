@@ -6,6 +6,7 @@ import { EnrollmentConfirmationComponent } from './pages/enrollment-confirmation
 import { EnrolledScheduleComponent } from './pages/enrolled-schedule/enrolled-schedule.component';
 import { SchedulePreviewComponent } from './pages/schedule-preview/schedule-preview.component';
 import { ScheduleSimulationComponent } from './pages/schedule-simulation/schedule-simulation.component';
+import { EnrollmentGuideComponent } from './pages/enrollment-guide/enrollment-guide.component';
 
 export const routes: Routes = [
     { path: "login", component: LoginComponent },
@@ -16,4 +17,5 @@ export const routes: Routes = [
     { path: "not-found", component: LoginComponent},
     { path: "schedule-preview", component: SchedulePreviewComponent},
     { path: "schedule-simulation", component: ScheduleSimulationComponent}
+    { path: "enrolled-guide", component: EnrollmentGuideComponent
 ];
