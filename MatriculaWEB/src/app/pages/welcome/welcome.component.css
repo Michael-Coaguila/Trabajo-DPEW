@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'SolanoGothicMVB-Bd';
+    src: url('/assets/fonts/SolanoGothicMVB-Bd.woff2') format('woff2'),
+         url('/assets/fonts/SolanoGothicMVB-Bd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'SolanoGothicMVB-Bd', Arial, sans-serif;
+    height: 100%; 
+}
+
+/* Estilos para el encabezado de bienvenida */
+.welcome-header {
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+    padding: 1% 0%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-system-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    left: 20px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.system-name {
+    font-size: 20px;
+    font-weight: bold; 
+    text-align: center;
+    margin-left: 30px ; 
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px; 
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    font-size: 14px;
+    color: #210d59;
+    font-weight: bold; 
+}
+
+.user-info p {
+    margin: 0;
+    line-height: 1.2;
+    font: 'SolanoGothicMVB-Bd';
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+img#toggleArrow {
+    width: 12px;
+    height: 12px;
+    margin: 5px 0; 
+}
+
+.logout-button {
+    background-color: #ffffff;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s ease; 
+    position: absolute; 
+    top: 80px; 
+    right: 100px; 
+    display: none; 
+}
+
+.logout-button a {
+    text-decoration: none;
+    color: #000; 
+    font-weight: bold;
+}
+
+.logout-button:hover {
+    background-color: #f0f0f0; 
+}
+
+.logout-link {
+    text-decoration: none; 
+    color: #333; 
+    display: flex;
+    align-items: center; 
+}
+
+.logout-link img {
+    margin-right: 5px; 
+}
+
+/* Estilos para la barra lateral */
+.sidebar-container {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 240px;
+    height: calc(100% - 80px);
+    background-color: #f0f0f0;
+    overflow-y: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    overflow-y: auto;
+}
+
+.sidebar-nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav ul li {
+    margin-bottom: 10px; 
+}
+
+.sidebar-nav ul li a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold; 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s ease; 
+}
+
+.sidebar-nav ul li a:hover {
+    background-color: #ddd;
+    color: #000; 
+}
+
+.sidebar-nav a img.sidebar-logo {
+    margin-right: 10px;
+    width: 20px; 
+    height: 20px;
+}
+
+/* Estilos para el contenido principal */
+main {
+    margin-left: 240px;
+    padding-top: 80px;
+}
+
+.info-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-box,
+.additional-box {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.welcome-box h2,
+.additional-box h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.important-warning {
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px; 
+    margin-bottom: 10px;
+}
+
+.warning-text {
+    text-align: justify;
+    text-align-last: left;
+}
+
+.small-text {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}

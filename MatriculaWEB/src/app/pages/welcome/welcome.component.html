@@ -1,1 +1,64 @@
-<p>welcome works!</p>
+<header class="welcome-header">
+    <div class="logo-system-container">
+        <div class="logo">
+            <img src="assets/img/logo1.png" alt="Logo de la Universidad">
+        </div>
+        <div class="system-name">
+            SISTEMA DE MATRICULA
+        </div>
+    </div>
+    <button class="user-profile" id="userProfile">
+        <img src="assets/img/profile.png" alt="Foto de perfil de María Lopez">
+        <div class="user-info">
+            <p>María Lopez</p>
+            <p>Código: U20241B656</p>               
+        </div>
+        <img src="assets/img/up.png" id="toggleArrow" alt="Toggle Arrow">
+    </button>
+    <div class="logout-button" id="logoutButton">
+        <a href="login" class="logout-link">
+            <img src="assets/img/salida.png" alt="Icono de salida"> Salir
+        </a>
+    </div>
+</header>
+
+<main>
+    <div class="content">
+        <div class="sidebar-container">
+            <div class="sidebar">
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li>
+                            <a routerLink="welcome">
+                                <img src="assets/img/tesis.png" alt="Logo" class="sidebar-logo"> Matrícula
+                            </a>
+                        </li>
+                        <li><a href="enrollment-guide">Guía de Matrícula 2024</a></li>
+                        <li><a href="schedule-simulation">Consulta de Horarios</a></li>
+                        <li><a href="course-selection">Iniciar Matrícula</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <div class="welcome-box">
+                <h2>¡Hola, María Lopez!</h2>
+                <h2>Bienvenida</h2>                
+            </div>
+
+            <div class="welcome-box">
+                <p>Tu turno de matrícula es: 05 de Agosto del 2024 </p>
+                <h2 class="important-warning">ADVERTENCIA IMPORTANTE</h2>    
+                <p class="warning-text">Por favor, asegúrese de tener todos sus pagos al día. Cualquier deuda pendiente puede impedir su inscripción en los cursos. Verifique su estado de cuenta y realice los pagos antes de iniciar el proceso de matrícula para evitar inconvenientes.</p>
+                <p class="small-text">Para consultar el estado de sus pagos y obtener más información. Haga click <a href="https://finanzas.upc.edu.pe/" target="_blank" style="color: blue;">AQUI</a>.</p>       
+            </div>
+        
+            <div class="welcome-box">
+                <h2>Guía de Matrícula 2024</h2>
+                <p>Consulta los requisitos para el inicio de matrícula</p>            
+            </div>
+        </div>
+    </div>
+</main>
+<script src="scripts/welcome.js"></script>
