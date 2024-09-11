@@ -16,6 +16,6 @@ export const routes: Routes = [
     { path: "enrolled-schedule", component: EnrolledScheduleComponent},
     { path: "not-found", component: LoginComponent},
     { path: "schedule-preview", component: SchedulePreviewComponent},
-    { path: "schedule-simulation", component: ScheduleSimulationComponent}
-    { path: "enrolled-guide", component: EnrollmentGuideComponent
+    { path: "schedule-simulation", component: ScheduleSimulationComponent},
+    { path: "enrollment-guide", component: EnrollmentGuideComponent}
 ];
