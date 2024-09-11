@@ -1,1 +1,83 @@
-<p>enrollment-guide works!</p>
+<header class="welcome-header">
+    <div class="logo-system-container">
+        <div class="logo">
+            <img src="/assets/img/logo1.png" alt="Logo de la Universidad">
+        </div>
+        <div class="system-name">
+            SISTEMA DE MATRICULA
+        </div>
+    </div>
+    <button class="user-profile" id="userProfile">
+        <img src="/assets/img/profile.png" alt="Foto de perfil de María Lopez">
+        <div class="user-info">
+            <p>María Lopez</p>
+            <p>Código: U20241B656</p>               
+        </div>
+        <img src="/assets/img/up.png" id="toggleArrow" alt="Toggle Arrow">
+    </button>
+    <div class="logout-button" id="logoutButton">
+        <a href="index.html" class="logout-link">
+            <img src="/assets/img/salida.png" alt="Icono de salida"> Salir
+        </a>
+    </div>
+</header>
+
+<main>
+    <div class="content">
+        <div class="sidebar-container">
+            <div class="sidebar">
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li>
+                            <a href="welcome">
+                                <img src="/assets/img/tesis.png" alt="Logo" class="sidebar-logo"> Matrícula
+                            </a>
+                        </li>
+                        <li><a routerLink="enrollment-guide">Guía de Matrícula 2024</a></li>
+                        <li><a href="schedule-simulation">Consulta de Horarios</a></li>
+                        <li><a href="course-selection">Iniciar Matrícula</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="main-content">
+            <div class="container">
+                <header>
+                    <h1>Guía de Matrícula</h1>
+                    <div class="program-info">
+                        <p>Programa: Ingenieria de Sistemas- Pregrado</p>
+                        <p>Periodo: 2024-02</p>
+                    </div>
+                </header>
+                <main>
+                    <section class="tutorial">
+                        <h2>¿Cómo me matriculo?</h2>
+                        <div class="video-container">
+                            <video width="560" height="315" controls>
+                                <source src="/assets/img/tutorial.mp4" type="video/mp4">
+                                Tu navegador no soporta la etiqueta de video.
+                            </video>
+                        </div>
+                    </section>
+                    
+                    <section class="faq">
+                        <h2>Preguntas Frecuentes</h2>
+                        <div class="faq-questions">
+                            <button>¿Dónde encuentro el turno de matrícula complementaria?</button>
+                            <button>¿Cómo realizo mi matrícula complementaria?</button>
+                            <button>¿Puedo solicitar cursos adicionales?</button>
+                            <button>¿Hasta cuántos créditos puedo matricularme?</button>
+                            <button>No tengo turno asignado ¿Puedo modificar o cambiar mi horario?</button>
+                            <button>¿Dónde puedo encontrar el cronograma de pagos?</button>
+                            <button>Tengo turno asignado ¿Puedo modificar o cambiar mi horario en la matrícula?</button>
+                            <button>¿Qué pasaría si he desaprobado un curso electivo?</button>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>        
+</main>
+<script src="scripts/guia.js"></script>
