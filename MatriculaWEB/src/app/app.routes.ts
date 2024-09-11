@@ -9,6 +9,7 @@ import { ScheduleSimulationComponent } from './pages/schedule-simulation/schedul
 import { EnrollmentGuideComponent } from './pages/enrollment-guide/enrollment-guide.component';
 
 export const routes: Routes = [
+    { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: "login", component: LoginComponent },
     { path: "welcome", component: WelcomeComponent},
     { path: "course-selection", component: CourseSelectionComponent},
